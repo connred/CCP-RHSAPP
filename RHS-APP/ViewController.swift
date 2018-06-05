@@ -10,6 +10,8 @@ import UIKit
 import WebKit
 class ViewController: UIViewController {
 
+    
+    @IBOutlet weak var RHSButton: UIButton!
     @IBOutlet weak var webView: WKWebView!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,6 +24,7 @@ class ViewController: UIViewController {
         webView.load(urlRequest)
         
     }
+    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
