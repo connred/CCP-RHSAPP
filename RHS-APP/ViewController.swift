@@ -14,6 +14,8 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var rhsButton: UIButton!
     @IBOutlet var annoucements: WKWebView!
+    @IBOutlet var imageView: UIImageView!
+    
     //@IBOutlet weak var rhsWeb: WKWebView!
     //@IBOutlet weak var picWeb: WKWebView!
     override func viewDidLoad() {
@@ -47,7 +49,6 @@ class ViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear( animated )
-        
         let url:URL = URL(string: "https://www.rockhursths.edu")!
         let urlRequest:URLRequest = URLRequest(url : url)
         annoucements.load(urlRequest)
