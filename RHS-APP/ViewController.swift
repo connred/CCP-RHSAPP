@@ -13,13 +13,14 @@ class ViewController: UIViewController {
 
 
     @IBOutlet weak var rhsButton: UIButton!
-    @IBOutlet weak var rhsWeb: WKWebView!
-    @IBOutlet weak var picWeb: WKWebView!
+    @IBOutlet var annoucements: WKWebView!
+    //@IBOutlet weak var rhsWeb: WKWebView!
+    //@IBOutlet weak var picWeb: WKWebView!
     override func viewDidLoad() {
         super.viewDidLoad()
         let menuLeftNavigationController = storyboard!.instantiateViewController(withIdentifier: "LeftMenuNavigationController") as! UISideMenuNavigationController
         SideMenuManager.default.menuLeftNavigationController = menuLeftNavigationController
-        //rhsButton.addTarget(self, action: Selector("didTapRHS"), for: .touchUpInside)
+        //rhsWeb.addTarget(self, action: Selector("rhsWeb"), for: .touchUpInside)
         
         // Define the menus
         //let menuLeftNavigationController = UISideMenuNavigationController(rootViewController: ViewController)
@@ -47,9 +48,9 @@ class ViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear( animated )
         
-        //let url:URL = URL(string: "https://www.apple.com")!
-        //let urlRequest:URLRequest = URLRequest(url : url)
-        //rhsWeb.load(urlRequest)
+        let url:URL = URL(string: "https://www.rockhursths.edu")!
+        let urlRequest:URLRequest = URLRequest(url : url)
+        annoucements.load(urlRequest)
         //let urlPic:URL = URL(string: "https://google.com")!
         //let urlRequest2:URLRequest = URLRequest(url:urlPic)
         //picWeb.load(urlRequest2)
