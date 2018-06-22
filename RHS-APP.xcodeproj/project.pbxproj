@@ -12,6 +12,7 @@
 		D57080786765C1565C45B334 /* Pods_RHS_APPTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2EC3F6CFE0C28286F68E600 /* Pods_RHS_APPTests.framework */; };
 		DB3ECE7E20C5BA340035CAFA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB5FFFC720C1EC88008A7583 /* Assets.xcassets */; };
 		DB3ECE7F20C5BA340035CAFA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB5FFFC720C1EC88008A7583 /* Assets.xcassets */; };
+		DB5E26C020DD75A700CB7AD9 /* accounce.html in Resources */ = {isa = PBXBuildFile; fileRef = DB5E26BF20DD75A700CB7AD9 /* accounce.html */; };
 		DB5FFFC120C1EC87008A7583 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5FFFC020C1EC87008A7583 /* AppDelegate.swift */; };
 		DB5FFFC320C1EC87008A7583 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB5FFFC220C1EC87008A7583 /* ViewController.swift */; };
 		DB5FFFC620C1EC87008A7583 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB5FFFC420C1EC87008A7583 /* Main.storyboard */; };
@@ -48,6 +49,7 @@
 		CFD98623FC6B6B09E64E3A8F /* Pods-RHS-APPTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RHS-APPTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RHS-APPTests/Pods-RHS-APPTests.release.xcconfig"; sourceTree = "<group>"; };
 		D2EC3F6CFE0C28286F68E600 /* Pods_RHS_APPTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RHS_APPTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6487833CB8BE6A4182CEC34 /* Pods-RHS-APP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RHS-APP.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RHS-APP/Pods-RHS-APP.debug.xcconfig"; sourceTree = "<group>"; };
+		DB5E26BF20DD75A700CB7AD9 /* accounce.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = accounce.html; sourceTree = "<group>"; };
 		DB5FFFBD20C1EC87008A7583 /* RHS-APP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RHS-APP.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB5FFFC020C1EC87008A7583 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DB5FFFC220C1EC87008A7583 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -129,6 +131,7 @@
 		DB5FFFBF20C1EC87008A7583 /* RHS-APP */ = {
 			isa = PBXGroup;
 			children = (
+				DB5E26BF20DD75A700CB7AD9 /* accounce.html */,
 				DB5FFFC020C1EC87008A7583 /* AppDelegate.swift */,
 				DB5FFFC220C1EC87008A7583 /* ViewController.swift */,
 				DB5FFFC420C1EC87008A7583 /* Main.storyboard */,
@@ -276,6 +279,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DB5FFFCB20C1EC88008A7583 /* LaunchScreen.storyboard in Resources */,
+				DB5E26C020DD75A700CB7AD9 /* accounce.html in Resources */,
 				DB5FFFC820C1EC88008A7583 /* Assets.xcassets in Resources */,
 				DB5FFFC620C1EC87008A7583 /* Main.storyboard in Resources */,
 			);

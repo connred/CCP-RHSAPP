@@ -49,9 +49,12 @@ class ViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear( animated )
-        let url:URL = URL(string: "https://www.rockhursths.edu")!
-        let urlRequest:URLRequest = URLRequest(url : url)
-        annoucements.load(urlRequest)
+        //let url:URL = URL(string: "https://www.rockhursths.edu")!
+        //let urlRequest:URLRequest = URLRequest(url : url)
+        let htmlPath = Bundle.main.path(forResource: "accounce", ofType: "html")
+        let url = URL(fileURLWithPath: htmlPath!)
+        let request = URLRequest(url: url)
+        annoucements.load(request)
         //let urlPic:URL = URL(string: "https://google.com")!
         //let urlRequest2:URLRequest = URLRequest(url:urlPic)
         //picWeb.load(urlRequest2)
