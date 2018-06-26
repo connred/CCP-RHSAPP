@@ -15,6 +15,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var rhsButton: UIButton!
     @IBOutlet var annoucements: WKWebView!
     @IBOutlet var imageView: UIImageView!
+    @IBOutlet var video: WKWebView!
     
     //@IBOutlet weak var rhsWeb: WKWebView!
     //@IBOutlet weak var picWeb: WKWebView!
@@ -51,6 +52,10 @@ class ViewController: UIViewController {
         super.viewDidAppear( animated )
         //let url:URL = URL(string: "https://www.rockhursths.edu")!
         //let urlRequest:URLRequest = URLRequest(url : url)
+        let videoPath = Bundle.main.path(forResource: "video", ofType: "html")
+        let url2 = URL(fileURLWithPath: videoPath!)
+        let request2 = URLRequest(url: url2)
+        video.load(request2)
         let htmlPath = Bundle.main.path(forResource: "accounce", ofType: "html")
         let url = URL(fileURLWithPath: htmlPath!)
         let request = URLRequest(url: url)

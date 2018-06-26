@@ -54,10 +54,15 @@
                                     <wkPreferences key="preferences"/>
                                 </wkWebViewConfiguration>
                             </wkWebView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Screen Shot 2018-04-18 at 10.35.16 AM" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JyU-3M-VdZ">
-                                <rect key="frame" x="38" y="82" width="297" height="158"/>
+                            <wkWebView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Jjx-SR-dWd">
+                                <rect key="frame" x="38" y="82" width="298" height="167"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="2Rz-Kl-AsJ"/>
@@ -65,8 +70,8 @@
                     <toolbarItems/>
                     <connections>
                         <outlet property="annoucements" destination="vtN-hr-1oO" id="ulF-xX-ocO"/>
-                        <outlet property="imageView" destination="JyU-3M-VdZ" id="Sqa-aX-2se"/>
                         <outlet property="rhsButton" destination="dj2-7o-bG7" id="Cw6-Qh-teE"/>
+                        <outlet property="video" destination="Jjx-SR-dWd" id="0z9-Dj-Pf8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gOs-02-aE7" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -173,7 +178,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Screen Shot 2018-04-18 at 10.35.16 AM" width="1544" height="1026"/>
         <image name="iPhone 8-Main" width="375" height="667"/>
     </resources>
 </document>
